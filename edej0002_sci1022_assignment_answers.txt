@@ -1,0 +1,3 @@
+mkdir ebooks
+cd ~/ebooks
+curl http://gutenberg.org/cache/epub/2265/pg2265.txt o- hamlet.txt
