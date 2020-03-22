@@ -1,3 +1,22 @@
 mkdir ebooks
+
 cd ~/ebooks
-curl http://gutenberg.org/cache/epub/2265/pg2265.txt o- hamlet.txt
+
+curl http://gutenberg.org/cache/epub/2265/pg2265.txt -o hamlet.txt
+
+cd /usr/lib/
+
+ls -l ~/ebooks/hamlet.txt
+-rw-rw-r--+ 1 edej0002 Domain Users 184406 Mar 22 16:57 /home/edej0002/ebooks/hamlet.txt
+
+wc ~/ebooks/hamlet.txt
+5207 32252 184406 /home/edej0002/ebooks/hamlet.txt
+
+sed -n '3447p' ~/ebooks/hamlet.txt
+Is thought-sicke at the act
+
+grep -i hamlet ~/ebooks/hamlet.txt | wc
+109 702 4278
+
+
+
